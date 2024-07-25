@@ -1,0 +1,8 @@
+
+numpy
+pandas 
+scikit-learn 
+joblib
+
+install 
+pip install mysql-connector-python

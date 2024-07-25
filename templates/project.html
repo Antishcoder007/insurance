@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Premium Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 align='center'>Insurance Premium Prediction</h1>
+        <hr>
+        <form action ="{{url_for('predict')}}" method ="post">
+            <table align="center" border ='1'>
+                <tr>
+                    <td><label for="">Age:</label></td>
+                    <td> <input type="text" placeholder="your age please......." name="age" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="">Gender:</label></td>
+                    <td> <select id="" name="gender" required>
+                        <option value="0">Male</option>
+                        <option value="1">Female</option>
+                    </select></td>
+                </tr>
+                
+                <tr>
+                    <td><label for="">Health:</label></td>
+                    <td> <select name="health" id="">
+                        <option value="1">Underweight</option>
+                        <option value="2">Healthyweight</option>
+                        <option value="3">overweight</option>
+                        <option value="4">obese</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="">BMI:</label></td>
+                    <td> <input type="text" name="bmi" required> </td>
+                </tr>
+                <tr>
+                    <td><label for="">Number of Children:</label></td>
+                    <td> <select name="children" id="">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+        
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="">Region:</label></td>
+                    <td> <select id="" name="region" required>
+                            <option value="se">Southeast</option>
+                            <option value="sw">Southwest</option>
+                            <option value="ne">Northeast</option>
+                            <option value="nw">Northwest</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="">smoker:</label></td>
+                    <td> <select id="" name="smoker" required>
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                    </select></td>
+                </tr>
+                
+                <tr>
+                    <td colspan='2' align ='center'><button type="submit">Predict Premium</button></td>
+                </tr>
+            </table>
+        </form>
+        
+    </div>
+    
+</body>
+</html>
